@@ -1,6 +1,6 @@
 {
   "name": "@zishone/monique",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A middleware that utilized rsql-mongodb to parse url queries into mongodb filter and options. Who's monqique? It is not a who, it's just short for Mongo I Query.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
