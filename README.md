@@ -1,10 +1,11 @@
 # monique [![NPM](https://img.shields.io/npm/v/@zishone/monique)](https://www.npmjs.com/package/@zishone/monique) [![Build](https://github.com/zishone/monique/workflows/build/badge.svg)](https://github.com/zishone/monique/actions?query=workflow%3Abuild) [![Coverage](https://codecov.io/gh/zishone/monique/branch/main/graph/badge.svg?token=XAWytg6M0z)](https://codecov.io/gh/zishone/monique) [![License](https://img.shields.io/github/license/zishone/monique)](https://github.com/zishone/monique/blob/master/LICENSE)
-A middleware that utilized [rsql-mongodb](https://www.npmjs.com/package/rsql-mongodb) to parse url queries into mongodb filter and options. Who's monqique? It is not a who, it's just short for **Mongo I Query**.
+A middleware that utilized [rsql-mongodb](https://www.npmjs.com/package/rsql-mongodb) to parse url queries into mongodb filter and options. Who's monique? It is not a who, it's just short for **Mongo I Query**.
 
 ## Installation
 ```shell
 $ npm i @zishone/monique
 ```
+
 ## Usage
 ```javascript
 const express = require('express');
@@ -29,7 +30,7 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     res.send({ data });
   });
 
-  app.listen(port, () => {
+  app.listen(3000, () => {
     console.log('Listening at port 3000')
   })
 });
@@ -56,12 +57,6 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     /get?sort=key1==asc;key2==desc;key3
     ```
     Defaults to `asc` if not specified.
-* **page**
-  * To skip elements in list of objects based on the given limit.
-  * Example:
-    ```
-    /get?page=1&limit=10
-    ```
 * **skip**
   * To skip elements in list of objects.
   * Example:
@@ -73,6 +68,12 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
   * Example:
     ```
     /get?limit=1
+    ```
+* **page**
+  * To skip elements in list of objects based on the given limit.
+  * Example:
+    ```
+    /get?page=1&limit=10
     ```
 
 ## Authors

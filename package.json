@@ -1,6 +1,6 @@
 {
   "name": "@zishone/monique",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A middleware that utilized rsql-mongodb to parse url queries into mongodb filter and options. Who's monqique? It is not a who, it's just short for Mongo I Query.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -62,7 +62,6 @@
     "lint-staged": "^10.5.3",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
-    "openapi-types": "^7.0.1",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
     "sinon": "^9.2.1",
